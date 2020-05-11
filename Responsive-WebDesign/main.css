@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.banner {
+    background-image: url(images/laptop.png);
+    background-size: cover;
+    height: 300px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding-left: 10px;
+    line-height: 40px;
+    z-index: 10;
+}
+
+nav {
+    position: absolute;
+    right: 4%;
+    height: 40px;
+    width: 30%;
+    z-index: 12;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-info {
+    color: #fff;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.site-info .title {
+    font-size: 42px;
+    letter-spacing: 20px;
+}
+
+.site-info .sub-title {
+    font-size: 28px;
+    letter-spacing: 8px;
+    padding-top: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: #515779
+}
+
+.about .content {
+    width: 60%;
+}
+
+.about .content .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.about .content .desc {
+    padding: 1px 5px 10px 2px;
+}
+
+.desc-mobile {
+    display: none;
+}
+
+.about .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.about .icon i {
+    font-size: 42px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    height: 250px;
+    color: #515779
+}
+
+.services-image {
+    height: 250px;
+    width: 475px;
+    background-image: url(images/service-grey.png);
+    background-size: cover;
+}
+
+.services .content {
+    width: 70%;
+}
+
+.services .content .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.services .content .desc {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #515779
+}
+
+.social i {
+    padding-right: 10px;
+}
+
+.copyright {
+    padding: 10px 0;
+}
+
+
+/* For Mid size screens */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    nav {
+        width: 45%;
+    }
+
+    .site-info {
+        top: 20%;
+    }
+    
+    .site-info .title {
+        font-size: 36px;
+    }
+    
+    .site-info .sub-title {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .about .content .title {
+        font-size: 18px;
+    }
+    
+    .about .content .desc {
+        padding: 1px 5px 10px 2px;
+        font-size: 11px;
+    }
+
+    .services .content .title {
+        font-size: 18px;
+    }
+    
+    .services .content .desc {
+        font-size: 11px;
+    }
+
+    .social i,
+    .copyright {
+        font-size: 12px;
+    }
+   
+}
+
+/* For smaller screens */
+
+@media only screen and (min-width:315px) and (max-width: 600px) {
+
+    nav {
+        width: 50%;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .banner {
+        background-image: url(images/laptop-mobile.png);
+        background-size: cover;
+        height: 250px;
+    }
+
+    .site-info {
+        top: 20%;
+    }
+
+    .site-info .title {
+        font-size: 24px;
+        letter-spacing: 10px;
+    }
+    
+    .site-info .sub-title {
+        font-size: 16px;
+        padding-top: 10px;
+        letter-spacing: 4px;
+    }
+
+    .about .content{
+        width: 100%;
+    }
+
+    .about .content .title {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .about .content .desc {
+        padding: 1px 5px 10px 2px;
+        font-size: 10px;
+    }
+
+    .about .icon {
+        display: none;
+    }
+
+
+    .services-image {
+       display: none;
+    }
+    
+    .services{
+        height: auto;
+    }
+
+    .services .content {
+        width: 100%;
+    }
+    
+    .services .content .title {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .services .content .desc {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .social,
+    .copyright{
+        font-size: 10px;
+    }
+
+
+}
+
+
